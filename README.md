@@ -1,5 +1,13 @@
 # Customized URL Filtering - Feature Engineering and Transfer Learning
 
+##Authors 
+
+- [Pronoy Kundu](https://github.com/Pronoy513)
+- [Fowzaan Rasheed](https://github.com/gitzaan/)
+- [Syed Sahil](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- [Sachin Saravana](https://www.youtube.com/watch?v=dQw4w9WgXcQ))
+
+
 ## Introduction
 
 This repository contains code and data for a research project focused on creating a customized URL Classification using transfer learning techniques. The project aims to develop a machine learning model capable of effectively blocking access to malicious and inappropriate websites, tailored to the specific requirements of different organizations.
