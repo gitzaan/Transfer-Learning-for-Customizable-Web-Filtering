@@ -10,7 +10,7 @@
 
 ## Overview 
 
-This repository contains a URL classification system using Neural Networks. It aims to classify various URLs into different categories, such as Benign, Malware, Phishing, Spam, and Defacement. The project is based on an original implementation provided in the Medium Post by the authors, Aaditya Jain, Anirudh Bhaskar, Srikanth, and Rohith Ramakrishnan. We have made modifications to the feature extraction and the model used for classification.
+This repository contains a URL classification system using Neural Networks. It aims to classify various URLs into different categories, such as Benign, Malware, Phishing, Spam, and Defacement. The project is based on an original implementation provided in the [Medium Post](https://medium.com/nerd-for-tech/url-feature-engineering-and-classification-66c0512fb34d) by the authors, Aaditya Jain, Anirudh Bhaskar, Srikanth, and Rohith Ramakrishnan. We have made modifications to the feature extraction and the model used for classification.
 
 ## Set-Up
 
@@ -62,11 +62,6 @@ python modelTrain.py
 
 After training the model, we evaluate its performance using metrics like accuracy and generate a classification report. The report provides detailed information on the model's classification performance for different categories.
 
-```
-cd scripts/
-python modelEval.py
-
-```
 ## Making Predictions
 
 To make predictions on a new URL, you need to follow these steps:
