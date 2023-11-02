@@ -5,7 +5,7 @@
 - [Pronoy Kundu](https://github.com/Pronoy513)
 - [Fowzaan Rasheed](https://github.com/gitzaan/)
 - [Syed Sahil]()
-- [Sachin Saravana]())
+- [Sachin Saravana]()
 
 
 ## Overview 
@@ -46,7 +46,7 @@ The features extracted are explained and visualized in the DataProcessing.ipynb 
 
 ## Data Description via Extracted Features 
 
-The project extracts various features from URLs, which are categorized into different groups. These features include characteristics of the URL string, domain features, and page features. For a detailed list of features, please refer to the original Medium Post.
+The project extracts various features from URLs, which are categorized into different groups. These features include characteristics of the URL string, domain features, and page features. For a detailed list of features, please refer to the original [Medium Post](https://medium.com/nerd-for-tech/url-feature-engineering-and-classification-66c0512fb34d.)
 
 ## Model
 
