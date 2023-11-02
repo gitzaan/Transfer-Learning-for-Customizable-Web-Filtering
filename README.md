@@ -25,9 +25,9 @@ Before running this project, make sure you have the following installed:
 
 Clone the repository and create a Python environment with the required packages:
 ```
-bash
-git clone https://github.com/Rohith-2/url_classification_dl
-cd url_classification_dl
+
+git clone https://github.com/gitzaan/Transfer-Learning-for-Customizable-Web-Filtering
+cd Transfer-Learning-for-Customizable-Web-Filtering
 conda create -n pyenv python=3.8.5
 conda activate pyenv
 pip install -r requirements.txt
