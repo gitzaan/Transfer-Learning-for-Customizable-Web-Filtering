@@ -4,8 +4,8 @@
 
 - [Pronoy Kundu](https://github.com/Pronoy513)
 - [Fowzaan Rasheed](https://github.com/gitzaan/)
-- [Syed Sahil]()
-- [Sachin Saravana]()
+- [Syed Sahil](https://github.com/syed-sahil-100)
+- [Sachin Saravana](https://github.com/SachinSarv1473)
 
 
 ## Overview 
