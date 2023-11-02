@@ -52,12 +52,21 @@ The project extracts various features from URLs, which are categorized into diff
 
 In our modified version of the project, we use a Convolutional Neural Network (CNN) with LSTM layers for classification. The architecture includes convolutional layers, batch normalization, max-pooling, dropout layers, and fully connected layers. The model is trained with an Adam optimizer.
 
+You can train the model using :
+```
+cd scripts/
+python modelTrain.py
 
+```
 ## Model Evaluation
 
 After training the model, we evaluate its performance using metrics like accuracy and generate a classification report. The report provides detailed information on the model's classification performance for different categories.
 
+```
+cd scripts/
+python modelEval.py
 
+```
 ## Making Predictions
 
 To make predictions on a new URL, you need to follow these steps:
