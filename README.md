@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 ```
 cd scripts/
-python UrlFeaturizer.py
+python FeatureExtraction.py
 
 ```
 
