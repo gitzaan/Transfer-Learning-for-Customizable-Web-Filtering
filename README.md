@@ -1,46 +1,77 @@
-# Customized URL Filtering - Feature Engineering and Transfer Learning
+# Transfer Learning for Customized URL Filtering - URL Classification with CNN/LSTM Hybrid Model 
 
 ## Authors 
 
 - [Pronoy Kundu](https://github.com/Pronoy513)
 - [Fowzaan Rasheed](https://github.com/gitzaan/)
-- [Syed Sahil](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
-- [Sachin Saravana Do not click](https://www.youtube.com/watch?v=dQw4w9WgXcQ))
+- [Syed Sahil]()
+- [Sachin Saravana]())
 
 
-## Introduction
+## Overview 
 
-This repository contains code and data for a research project focused on creating a customized URL Classification using transfer learning techniques. The project aims to develop a machine learning model capable of effectively blocking access to malicious and inappropriate websites, tailored to the specific requirements of different organizations.
+This repository contains a URL classification system using Neural Networks. It aims to classify various URLs into different categories, such as Benign, Malware, Phishing, Spam, and Defacement. The project is based on an original implementation provided in the Medium Post by the authors, Aaditya Jain, Anirudh Bhaskar, Srikanth, and Rohith Ramakrishnan. We have made modifications to the feature extraction and the model used for classification.
 
-## Data Preparation
+## Set-Up
 
-We start by preparing and exploring the dataset containing features related to URLs. The dataset is loaded, and several preprocessing steps are performed, including data cleaning and feature selection.
+### Pre-requisites
 
-## Feature Analysis
+Before running this project, make sure you have the following installed:
 
-We conduct an analysis of the dataset to understand the variation of features across different types of URLs (Benign, Defacement, Malware, Phishing, and Spam). A plot is generated to visualize how different features vary for each URL type.
+- [conda](https://repo.anaconda.com/)
+- [git](https://git-scm.com/)
+
+### Installation
+
+Clone the repository and create a Python environment with the required packages:
+```
+bash
+git clone https://github.com/Rohith-2/url_classification_dl
+cd url_classification_dl
+conda create -n pyenv python=3.8.5
+conda activate pyenv
+pip install -r requirements.txt
+```
+
+## Feature Extraction
+
+```
+cd scripts/
+python UrlFeaturizer.py
+
+```
+
+The features extracted are explained and visualized in the DataProcessing.ipynb notebook.
 
 
-## Transfer Learning and Neural Network
+## Data Description via Extracted Features 
 
-The project involves training and testing a neural network model using features extracted from the dataset. We use transfer learning techniques to adapt the model for customized URL classification. The model architecture, including embedding layers and a bidirectional GRU, is defined and compiled.
+The project extracts various features from URLs, which are categorized into different groups. These features include characteristics of the URL string, domain features, and page features. For a detailed list of features, please refer to the original Medium Post.
 
-## Getting Started
+## Model
 
-To replicate this research and explore the code and data, follow these steps:
+In our modified version of the project, we use a Convolutional Neural Network (CNN) with LSTM layers for classification. The architecture includes convolutional layers, batch normalization, max-pooling, dropout layers, and fully connected layers. The model is trained with an Adam optimizer.
 
-1. Clone this repository: `git clone [repository_url]`
-2. Install the required Python libraries: `pip install -r requirements.txt`
-3. Run the Jupyter Notebook or Python script to perform feature engineering and transfer learning.
 
-## Requirements
+## Model Evaluation
 
-- Python 3.x
-- Libraries mentioned in the `requirements.txt` file
+After training the model, we evaluate its performance using metrics like accuracy and generate a classification report. The report provides detailed information on the model's classification performance for different categories.
 
+
+## Making Predictions
+
+To make predictions on a new URL, you need to follow these steps:
+
+1. Load the LabelEncoder and StandardScaler from the saved files.
+2. Load the pre-trained model.
+3. Featurize the URL and prepare the features for prediction.
+4. Standardize the features and reshape them to match the model's input shape.
+5. Make predictions and convert numerical predictions to class labels.
+
+- You can make predictions by running the following
+ ```
+ cd scripts/
+python predict_args.py -i <url>
+```
 ## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
-
+This project is licensed under the MIT License - see the LICENSE file for details.
