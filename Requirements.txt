@@ -1,0 +1,13 @@
+pandas
+datetime
+matplotlib
+python-whois-extended
+numpy
+tqdm
+pyquery
+requests
+interruptingcow 
+sklearn
+jedi
+keras
+tensorflow
